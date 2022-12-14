@@ -172,7 +172,7 @@ stan_compile_full <- function(){
   m1
 }
 compiled = stan_compile_full()
-save(compiled,file="compiled_full_new-ab.Rdata")
+save(compiled,file="compiled_full.Rdata")
 
 
 stan_compile_ind <- function(){
@@ -254,7 +254,7 @@ stan_compile_ind <- function(){
   m1
 }
 compiled = stan_compile_ind()
-save(compiled,file="compiled_ind_new-ab.Rdata")
+save(compiled,file="compiled_ind.Rdata")
 
 stan_compile_partially <- function(){
   write("functions {
@@ -391,4 +391,4 @@ stan_compile_partially <- function(){
   m1
 }
 compiled = stan_compile_partially()
-save(compiled,file="compiled_partial_new-ab.Rdata")
+save(compiled,file="compiled_partial.Rdata")
