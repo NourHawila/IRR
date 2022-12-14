@@ -601,7 +601,7 @@ model_BFN <- function(df,cov_T_str = "unstructured",
                       beta_mean=0, beta_sigma=1/0.3, betak_mean=0,
                       betak_sigma=1/0.3, rho_T_eta=1,rho_R_eta=1,
                       niters = 1000, nwarmup = 200, nchains = 1){
-  load("compiled_full_new-ab.Rdata")
+  load("compiled_full.Rdata")
   
   I=length(unique(df$subject))
   J=length(unique(df$rater))
@@ -732,7 +732,7 @@ model_BIN <- function(df,addFixedEff = TRUE,
                       beta_b = 5, gamma_a = 3, gamma_b = 1.5, 
                       beta_mean=0, beta_sigma=1/0.3,
                       niters = 1000, nwarmup = 200, nchains = 1){
-  load("compiled_ind_new-ab.Rdata")
+  load("compiled_ind.Rdata")
   
   I=length(unique(df$subject))
   J=length(unique(df$rater))
@@ -854,7 +854,7 @@ model_BPN <- function(df,cov_T_str = "unstructured",addFixedEff = TRUE,
                       betak_sigma=1/0.3, rho_T_eta=1,rho_R_eta=1,
                       niters = 1000, nwarmup = 200, nchains = 1){
   
-  load("compiled_partial_new-ab.Rdata")
+  load("compiled_partial.Rdata")
   
   I=length(unique(df$subject))
   J=length(unique(df$rater))
